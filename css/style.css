@@ -1,0 +1,369 @@
+:root {
+    --clr-primary: #274390;
+}
+  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+  
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(#111111, #0a071a);
+    color: #969292; 
+    overflow-x: hidden;
+}
+  
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    background: linear-gradient(to right, #1e1e1e 70%, #051c5f);
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Remove underline from all links */
+nav a {
+    font-size: small;
+    color: rgb(11, 11, 11);
+    margin-right: 10px;
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-nav .nav-link.active {
+    color: #969292; 
+    padding: 5px 10px;
+    border-bottom: 3px solid #454546; 
+    padding-bottom: 3px;
+}
+
+.navbar-nav .nav-link:hover { 
+    color: #ffffff; 
+    transform: scale(1.05);
+}
+
+.btn-primary {
+    background-color: #100a8b;
+    border-color: #120c92;
+}
+
+h1, h2, h3, h4 {
+    text-decoration: none;
+    color: #969292;
+}
+
+section {
+    margin-top: 40px;
+}
+
+.profile-img {
+    width: 350px;
+    height: 350px; 
+    object-fit: cover; 
+}
+
+.profile-section p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.rounded-circle {
+    border: 5px solid #104e84;
+}
+
+.about-section {
+    padding: 50px 0;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.image-link {
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.image-link img {
+    border-radius: 5px; /* Apply border radius */
+    width: 100%; /* Make images responsive */
+    height: 180px; /* Set a specific height for all images */
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the space */
+    
+}
+
+.image-link:hover {
+    transform: scale(1.15);
+}
+.project {
+    background: radial-gradient(#1a1919, #25242c);
+    color: #969292; /* Text color */
+    padding: 15px;
+    border-radius: 5px;
+ 
+}
+
+/* Style for project links */
+.project-id {
+    font-size: 1rem;
+    color: rgb(91, 91, 91); /* Initial link color */
+    padding: 5px 5px; 
+    text-decoration: none; /* Ensure no underline */
+}
+
+/* Hover effect for project links */
+.project-id:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+    color: #969292; /* Color change on hover */
+}
+
+/* Ensure no underline on any links inside .heading */
+.heading a {
+    text-decoration: none; /* Remove underline from heading links */
+    color: inherit; 
+}
+
+
+.heading a:hover {
+    color: #f8f2f2;
+    transform: scale(1.1); 
+    font-size: 26px;
+}
+
+/* Center align for any text links */
+.link {
+    text-align: center; 
+}
+
+/* Card styling for individual project */
+.project-card {
+    margin-bottom: 30px; /* Spacing between project cards */
+}
+
+/* Optional: Add hover effect for project card */
+.project:hover {
+    background: radial-gradient(#25242c, #1a1919); /* Darken on hover */
+}
+
+
+.skill-box {
+    color: rgb(91, 91, 91);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px #454546;
+    transition: transform 0.3s, box-shadow 0.3s; /* Hover transition */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(156, 89, 89, 0.6);
+}
+
+.skill-box img {
+    display: block;       
+    margin: 0 auto;       
+    width: 50px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.skill-box:hover img {
+    transform: scale(1.2);
+}
+
+.skill-box h4 {
+    text-align: center;
+    margin-top: 10px;
+    color: #969292;
+    font-size: 15px;
+}
+
+.skill-box:hover h4 {
+    color: #f8f2f2;
+}
+
+.skill-box p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.skill-icon {
+    width: 50px; /* Increase icon size */
+    height: 50px; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+.github-icon {
+    background-color: rgb(225, 213, 213); /* Set background color to black */
+    padding: 10px; /* Optional: Add some padding */
+    border-radius: 100%; /* Makes the icon circular */
+    width: 50px; /* Fixed width for the icon */
+    height: 50px;
+}
+
+.github-card {
+    position: relative;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure content stays within the card */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center; /* Center text in the card */
+}
+
+.github-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.github-card img {
+    width: 100%; 
+    height: auto; 
+    transition: transform 0.3s;
+}
+
+.github-card:hover img {
+    transform: scale(1.1); /* Zoom effect on image hover */
+}
+
+.github-content {
+    padding: 10px; /* Add padding around the content */
+}
+
+/* Contact CSS */
+.contact-heading {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Use the inherited text color */
+}
+
+.contact_heading {
+    font-size: 24px; /* Smooth transition for the size change */
+}
+
+.contact-heading:hover .contact_heading {
+    font-size: 26px; /* Increase size on hover */
+}
+
+.custom-input {
+    background-color: #ffff;
+    border-radius: 7px;
+    border: 1px solid #474747;
+    color: #7e7b7b;
+}
+
+.custom-input::placeholder {
+    color: #7e7b7b;
+}
+
+.custom-input:focus {
+    background-color: #b7b4b4;
+    border-color: #292d32;
+    box-shadow: 0 0 8px rgba(48, 50, 53, 0.5);
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-item {
+    font-size: 15px;
+    color: #969292;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover {
+    color: #ddd7d7;
+    font-size: 12px;
+}
+
+.contact-icon {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+    border-radius: 50%; /* Rounded icon look */
+    background-color: #fff; /* White background inside the circle */
+}
+
+.contact-item:hover .contact-icon {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+
+.text-white {
+    color: #969292;
+}
+
+.alert {
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 4px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.alert-text {
+    margin-right: 20px;
+}
+
+
+
+footer {
+    color: #969292;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(to right, #1e1e1e 70%, #051c5f);
+}
+
+@media (max-width: 991.98px) { /* Bootstrap's breakpoint for lg */
+    .navbar-nav {
+        flex-direction: column; /* Stack nav items vertically */
+        width: 100%; /* Full width */
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center; /* Center align links */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h3 {
+        font-size: 2.5rem;
+    }
+
+    .profile-img {
+        max-width: 250px;
+    }
+}
